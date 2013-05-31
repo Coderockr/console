@@ -1,6 +1,9 @@
 $ ->
   page '/', ->
-    REPLIT.OpenPage 'workspace'
+    REPLIT.url_language = true;
+    REPLIT.current_lang_name = 'Python';
+    REPLIT.OpenPage('workspace');
+    return REPLIT.LoadLanguage('Python');
 
   page '/examples', (context, next) ->
     if REPLIT.current_lang? and REPLIT.jqconsole.GetState() is 'prompt'
