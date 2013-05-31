@@ -90,12 +90,6 @@ $.extend REPLIT,
     @jqconsole.RegisterShortcut 'Z', =>
       @jqconsole.AbortPrompt()
       @StartPrompt()
-    @jqconsole.RegisterShortcut 'L', =>
-      @OpenPage 'languages'
-    @jqconsole.RegisterShortcut 'G', =>
-      @OpenPage 'examples'
-    @jqconsole.RegisterShortcut 'H', =>
-      @OpenPage 'help'
     @jqconsole.RegisterShortcut 'S', =>
       $('#button-save').click()
     @jqconsole.RegisterShortcut 'A', =>
