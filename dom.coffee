@@ -267,16 +267,17 @@ $.extend REPLIT,
 
     # Resize container and current page.
     @$container.css
-      width: width
+      width: 413
     if @ISMOBILE and not $('.page:visible').is '#content-workspace'
       @$container.css 'height', 'auto'
     else
-      @$container.css 'height', height
+      @$container.css 'height', 375
+      @$container.css 'width', 413
     $('.page:visible').css
-      width: innerWidth
+      width: 413
 
     if $('.page:visible').is '#content-workspace'
-      @ResizeWorkspace innerWidth, height
+      @ResizeWorkspace innerWidth, 375
 
   ResizeWorkspace: (innerWidth, height) ->
     # Calculate editor and console sizes.
@@ -293,7 +294,7 @@ $.extend REPLIT,
       width: editor_width
       height: height
     @$consoleContainer.css
-      width: console_width
+      width: 413
       height: height
 
     # Check if console/editor was meant to be hidden.
@@ -305,6 +306,8 @@ $.extend REPLIT,
       @$editorContainer.hide()
       @$resizer.c.hide()
       @$unhider.editor.show()
+    @$editorContainer.hide()
+    @$resizer.c.hide()
 
     # Calculate paddings if any.
     console_hpadding = @$console.innerWidth() - @$console.width()

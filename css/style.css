@@ -152,21 +152,11 @@ html, body {
 
 /* Content */
 
-#main {
-  background: #FFF;
-  margin: 0 auto;
-  height: 682px;
-  width: 1000px;
-  position: relative;
-}
-
 .page {
   background: #FFF;
-  margin: 0 auto;
   height: 100%;
-  width: 100%;
+  width: 413px;
   position: relative;
-  overflow: auto;
   display: none;
 }
 
@@ -291,7 +281,7 @@ html, body {
   background: #0E1628;
   width: 591px;
   position: absolute;
-  right: 0px;
+  left: 0px;
   bottom: 0;
   height: 100%;
 }
