@@ -1,4 +1,4 @@
 console
 =======
 
-Console baseado no projeto repl.it
+Console baseado no projeto https://github.com/replit/repl.it
